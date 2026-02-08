@@ -9,50 +9,131 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:linear-gradient(180deg,#f4f8ff,#eef2ff);color:#1a1a1a}
+body{
+  background:linear-gradient(180deg,#f4f8ff,#eef2ff);
+  color:#1a1a1a;
+}
 
 /* INTRO */
-#intro{position:fixed;inset:0;background:radial-gradient(circle at top,#0b5cff,#08162e);
-display:flex;align-items:center;justify-content:center;z-index:9999}
-#intro h1{font-size:4rem;letter-spacing:8px;color:#fff;animation:glow 1.5s infinite alternate}
-@keyframes glow{from{text-shadow:0 0 10px #fff}to{text-shadow:0 0 40px #7ecbff}}
+#intro{
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle at top,#0b5cff,#08162e);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+#intro h1{
+  font-size:4rem;
+  letter-spacing:8px;
+  color:#fff;
+  animation:glow 1.5s infinite alternate;
+}
+@keyframes glow{
+  from{text-shadow:0 0 10px #fff}
+  to{text-shadow:0 0 40px #7ecbff}
+}
 
 /* HEADER */
-header{background:linear-gradient(135deg,#0b5cff,#00c6ff);color:#fff;padding:35px 15px;text-align:center}
+header{
+  background:linear-gradient(135deg,#0b5cff,#00c6ff);
+  color:#fff;
+  padding:35px 15px;
+  text-align:center;
+}
 header h1{font-size:2.6rem}
 header p{opacity:.9}
 
 /* SECTION */
-.section{max-width:900px;margin:30px auto;background:#fff;border-radius:16px;
-padding:28px;box-shadow:0 15px 35px rgba(0,0,0,.08)}
-.section h2{border-left:5px solid #0b5cff;padding-left:12px;margin-bottom:15px;font-size:1.5rem}
+.section{
+  max-width:900px;
+  margin:30px auto;
+  background:#fff;
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+.section h2{
+  border-left:5px solid #0b5cff;
+  padding-left:12px;
+  margin-bottom:15px;
+  font-size:1.5rem;
+}
 
 /* CALLOUT */
-.callout{margin:20px 0;padding:18px;border-radius:14px;
-background:linear-gradient(135deg,#ffe259,#ffa751);color:#3b2400;font-weight:600}
+.callout{
+  margin:20px 0;
+  padding:18px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#ffe259,#ffa751);
+  color:#3b2400;
+  font-weight:600;
+}
 
 /* COUNTDOWN */
-#countdown{margin-top:15px;padding:16px;background:linear-gradient(135deg,#d4fc79,#96e6a1);
-border-radius:14px;font-weight:700;text-align:center}
+#countdown{
+  margin-top:15px;
+  padding:16px;
+  background:linear-gradient(135deg,#d4fc79,#96e6a1);
+  border-radius:14px;
+  font-weight:700;
+  text-align:center;
+}
 
 /* BUTTON */
-.btn{display:inline-block;margin-top:15px;padding:14px 22px;border-radius:12px;
-background:linear-gradient(135deg,#0b5cff,#00c6ff);color:#fff;text-decoration:none;font-weight:600}
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:14px 22px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#0b5cff,#00c6ff);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
 
 /* FOOTER */
-footer{background:linear-gradient(135deg,#0b5cff,#00c6ff);color:#fff;padding:30px 15px;margin-top:40px}
-.footer-box{max-width:900px;margin:auto;display:grid;gap:15px}
-.contact-card{background:rgba(255,255,255,.15);padding:16px;border-radius:14px;
-font-weight:600;color:white;text-decoration:none}
-.contact-card span{display:block;opacity:.9;font-size:.9rem}
-.copy{text-align:center;margin-top:20px;opacity:.8;font-size:.85rem}
+footer{
+  background:linear-gradient(135deg,#0b5cff,#00c6ff);
+  color:#fff;
+  padding:30px 15px;
+  margin-top:40px;
+}
+.footer-box{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  gap:15px;
+}
+.contact-card{
+  background:rgba(255,255,255,.15);
+  padding:16px;
+  border-radius:14px;
+  font-weight:600;
+  color:white;
+  text-decoration:none;
+}
+.contact-card span{
+  display:block;
+  opacity:.9;
+  font-size:.9rem;
+}
+.copy{
+  text-align:center;
+  margin-top:20px;
+  opacity:.8;
+  font-size:.85rem;
+}
 </style>
 </head>
 
 <body>
 
 <!-- INTRO -->
-<div id="intro"><h1>MANKIT</h1></div>
+<div id="intro">
+  <h1>MANKIT</h1>
+</div>
 
 <header>
   <h1>Mankit</h1>
@@ -88,10 +169,6 @@ font-weight:600;color:white;text-decoration:none}
      href="https://green-cartoon-b8e.notion.site/Zindagi-Ka-Real-Syllabus-2dd161bfa1c78065b5efcb27eeb530a6?pvs=73">
      Enter My Writing World →
   </a>
-
-  <a class="btn" href="letter.html" style="margin-left:10px;">
-     View PM Letter 🇮🇳
-  </a>
 </div>
 
 <!-- GOOGLE DRIVE DOCUMENT -->
@@ -103,7 +180,7 @@ font-weight:600;color:white;text-decoration:none}
   </p>
 
   <div class="callout">
-    🔗 Secure document – opens directly from Google Drive
+    🇮🇳 PM of India Narendra Modi’s words for me
   </div>
 
   <a class="btn" target="_blank"
@@ -153,12 +230,18 @@ font-weight:600;color:white;text-decoration:none}
     </a>
   </div>
 
-  <div class="copy">© 2026 Mankit. All rights reserved.</div>
+  <div class="copy">
+    © 2026 Mankit. All rights reserved.
+  </div>
 </footer>
 
 <script>
-setTimeout(()=>{document.getElementById("intro").style.display="none";},3000);
+/* INTRO */
+setTimeout(()=>{
+  document.getElementById("intro").style.display="none";
+},3000);
 
+/* COUNTDOWN */
 const target=new Date("March 3, 2026 00:00:00").getTime();
 setInterval(()=>{
   const now=new Date().getTime();
