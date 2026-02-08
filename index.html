@@ -1,62 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mankit Official</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{
-      margin:0;
-      background:black;
-      color:white;
-      font-family: 'Segoe UI', sans-serif;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height:100vh;
-      overflow:hidden;
-    }
-    .intro{
-      text-align:center;
-      animation: fadeOut 4s forwards;
-    }
-    h1{
-      font-size:3rem;
-      letter-spacing:3px;
-    }
-    p{
-      opacity:0.8;
-      margin-top:10px;
-    }
-    @keyframes fadeOut{
-      0%{opacity:1}
-      80%{opacity:1}
-      100%{opacity:0}
-    }
-    .main{
-      display:none;
-      text-align:center;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Mankit Official</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:black;
+  overflow:hidden;
+  color:white;
+}
+
+/* ===== STARS ===== */
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+/* ===== INTRO ===== */
+.intro{
+  position:fixed;
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:10;
+  animation: fadeOut 3s forwards;
+  animation-delay:2.5s;
+}
+
+.intro h1{
+  font-size:3.5rem;
+  letter-spacing:6px;
+  text-shadow: 0 0 20px white, 0 0 40px #00f;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* ===== MAIN ===== */
+.main{
+  display:none;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  animation: fadeIn 2s ease-in;
+}
+
+.main h1{
+  font-size:2.5rem;
+  animation: slideUp 2s ease;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes glow{
+  from{ text-shadow:0 0 10px white; }
+  to{ text-shadow:0 0 30px #00f; }
+}
+
+@keyframes fadeOut{
+  to{ opacity:0; visibility:hidden; }
+}
+
+@keyframes fadeIn{
+  from{ opacity:0; }
+  to{ opacity:1; }
+}
+
+@keyframes slideUp{
+  from{ transform:translateY(30px); opacity:0; }
+  to{ transform:translateY(0); opacity:1; }
+}
+</style>
 </head>
+
 <body>
 
+<canvas id="stars"></canvas>
+
 <div class="intro" id="intro">
-  ✨✨✨
   <h1>MANKIT</h1>
-  <p>Official Website</p>
 </div>
 
 <div class="main" id="main">
   <h1>Welcome to Mankit Official</h1>
-  <p>Content coming soon… 🚀</p>
 </div>
 
 <script>
-  setTimeout(()=>{
-    document.getElementById("intro").style.display="none";
-    document.getElementById("main").style.display="block";
-  },4000);
+/* ===== STARS SCRIPT ===== */
+const canvas = document.getElementById("stars");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars = [];
+
+for(let i=0;i<150;i++){
+  stars.push({
+    x:Math.random()*canvas.width,
+    y:Math.random()*canvas.height,
+    r:Math.random()*1.5,
+    d:Math.random()*0.5
+  });
+}
+
+function drawStars(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle="white";
+  stars.forEach(s=>{
+    ctx.beginPath();
+    ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+    ctx.fill();
+    s.y += s.d;
+    if(s.y > canvas.height) s.y = 0;
+  });
+}
+
+setInterval(drawStars,30);
+
+/* ===== SWITCH INTRO TO MAIN ===== */
+setTimeout(()=>{
+  document.getElementById("intro").style.display="none";
+  document.getElementById("main").style.display="flex";
+},3000);
 </script>
 
 </body>
