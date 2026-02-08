@@ -5,15 +5,21 @@
 <title>Mankit Official</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
-body{background:#f3f6fb;color:#1a1a1a}
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-/* ===== INTRO ===== */
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+  background:linear-gradient(180deg,#f4f8ff,#eef2ff);
+  color:#1a1a1a;
+}
+
+/* INTRO */
 #intro{
   position:fixed;
   inset:0;
-  background:#0b1f33;
+  background:radial-gradient(circle at top,#0b5cff,#08162e);
   display:flex;
   align-items:center;
   justify-content:center;
@@ -21,55 +27,90 @@ body{background:#f3f6fb;color:#1a1a1a}
 }
 #intro h1{
   font-size:4rem;
-  letter-spacing:6px;
+  letter-spacing:8px;
   color:#fff;
   animation:glow 1.5s infinite alternate;
 }
 @keyframes glow{
   from{text-shadow:0 0 10px #fff}
-  to{text-shadow:0 0 35px #4fa3ff}
+  to{text-shadow:0 0 40px #7ecbff}
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
-  background:#0b3a5b;
+  background:linear-gradient(135deg,#0b5cff,#00c6ff);
   color:#fff;
-  padding:30px 15px;
+  padding:35px 15px;
   text-align:center;
 }
-header h1{font-size:2.5rem}
-header p{opacity:.85}
+header h1{font-size:2.6rem}
+header p{opacity:.9}
 
-/* ===== SECTION ===== */
+/* SECTION */
 .section{
   max-width:900px;
   margin:30px auto;
   background:#fff;
-  border-radius:14px;
-  padding:25px;
-  box-shadow:0 10px 30px rgba(0,0,0,.05);
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
 .section h2{
-  border-left:4px solid #0b3a5b;
-  padding-left:10px;
+  border-left:5px solid #0b5cff;
+  padding-left:12px;
   margin-bottom:15px;
+  font-size:1.5rem;
 }
 
-/* ===== COUNTDOWN ===== */
-#countdown{
-  margin-top:15px;
-  padding:15px;
-  background:#eef4ff;
-  border-radius:10px;
+/* CALLOUT */
+.callout{
+  margin:20px 0;
+  padding:18px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#ffe259,#ffa751);
+  color:#3b2400;
   font-weight:600;
 }
 
-/* ===== FOOTER ===== */
-footer{
+/* COUNTDOWN */
+#countdown{
+  margin-top:15px;
+  padding:16px;
+  background:linear-gradient(135deg,#d4fc79,#96e6a1);
+  border-radius:14px;
+  font-weight:700;
   text-align:center;
-  padding:20px;
-  opacity:.6;
+}
+
+/* FOOTER */
+footer{
+  background:linear-gradient(135deg,#0b5cff,#00c6ff);
+  color:#fff;
+  padding:30px 15px;
+  margin-top:40px;
+}
+.footer-box{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  gap:15px;
+}
+.contact-card{
+  background:rgba(255,255,255,.15);
+  padding:16px;
+  border-radius:14px;
+  font-weight:600;
+}
+.contact-card span{
+  display:block;
+  opacity:.9;
   font-size:.9rem;
+}
+.copy{
+  text-align:center;
+  margin-top:20px;
+  opacity:.8;
+  font-size:.85rem;
 }
 </style>
 </head>
@@ -81,7 +122,6 @@ footer{
   <h1>MANKIT</h1>
 </div>
 
-<!-- HEADER -->
 <header>
   <h1>Mankit</h1>
   <p>Official Personal & Professional Portal</p>
@@ -92,29 +132,32 @@ footer{
   <h2>Welcome</h2>
   <p>
   Welcome to my official digital space. This platform reflects my journey,
-  values, and a continuous commitment to growth through discipline,
-  consistency, and honest effort. This is a space where purpose matters
-  more than shortcuts and learning never stops.
+  values, and continuous effort to grow with discipline, consistency,
+  and honest intent. This is a space built on patience, purpose,
+  and belief in long-term growth.
   </p>
+
+  <div class="callout">
+    🎂 <strong>03 March</strong> is not just a date — it marks the beginning of
+    a journey driven by consistency, courage, and continuous self-improvement.
+  </div>
 
   <div id="countdown">Loading countdown…</div>
 </div>
 
-<!-- ABOUT ME -->
+<!-- ABOUT -->
 <div class="section">
   <h2>About Me</h2>
   <p>
   My name is Mankit, born and raised in Karnal. I completed my schooling from
   PM Shri Government Senior Secondary School, Karnal, and I am currently a
-  JEE aspirant who believes in structured learning, self-discipline,
-  and long-term consistency.
+  JEE aspirant who believes in structured learning, discipline, and honest effort.
   </p>
 
   <p>
   I am a proud <strong>PRERANA Alumnus</strong>, an initiative supported by the
-  <strong>Ministry of Education, Government of India</strong>, which played a
-  significant role in shaping my perspective towards leadership,
-  responsibility, and nation-building.
+  <strong>Ministry of Education, Government of India</strong>, which shaped my
+  perspective towards leadership, responsibility, and nation-building.
   </p>
 
   <p>
@@ -123,38 +166,44 @@ footer{
   and innovation-driven learning.
   </p>
 
-  <p>
-  My core qualities include consistency, discipline, integrity,
-  analytical thinking, curiosity for learning, and the courage to
-  grow through challenges. I value equality, mutual respect, and
-  believe that meaningful progress comes from patience and honest work.
-  </p>
-
-  <p>
-  Every achievement so far stands on the support of my parents,
-  teachers, mentors, and well-wishers who guided me at different
-  stages of my life.
-  </p>
+  <div class="callout">
+    Key qualities I value: consistency, discipline, integrity,
+    analytical thinking, curiosity for learning, and respect for all.
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  © 2026 Mankit. All rights reserved.
+  <div class="footer-box">
+    <div class="contact-card">
+      📸 Instagram
+      <span>@mankitvibes.only_</span>
+    </div>
+
+    <div class="contact-card">
+      ✉️ Email
+      <span>mankitmankit7@gmail.com</span>
+    </div>
+  </div>
+
+  <div class="copy">
+    © 2026 Mankit. All rights reserved.
+  </div>
 </footer>
 
 <script>
-/* INTRO REMOVE */
+/* INTRO */
 setTimeout(()=>{
   document.getElementById("intro").style.display="none";
 },3000);
 
 /* COUNTDOWN */
-const target = new Date("March 3, 2026 00:00:00").getTime();
+const target=new Date("March 3, 2026 00:00:00").getTime();
 setInterval(()=>{
-  const now = new Date().getTime();
-  const diff = target - now;
-  if(diff < 0){
-    document.getElementById("countdown").innerHTML="🎉 It's 3 March!";
+  const now=new Date().getTime();
+  const diff=target-now;
+  if(diff<0){
+    document.getElementById("countdown").innerHTML="🎉 Happy Birthday, Mankit!";
     return;
   }
   const d=Math.floor(diff/(1000*60*60*24));
@@ -162,7 +211,7 @@ setInterval(()=>{
   const m=Math.floor((diff%(1000*60*60))/(1000*60));
   const s=Math.floor((diff%(1000*60))/1000);
   document.getElementById("countdown").innerHTML=
-    `Countdown to 3 March 2026: ${d}d ${h}h ${m}m ${s}s`;
+  `Countdown to 03 March: ${d}d ${h}h ${m}m ${s}s`;
 },1000);
 </script>
 
