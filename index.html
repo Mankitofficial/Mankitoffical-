@@ -14,7 +14,7 @@ body{
   color:#1a1a1a;
 }
 
-/* SPLASH WITH FADE-IN EFFECT */
+/* SPLASH WITH FADE-IN */
 #splash{
   position:fixed;
   inset:0;
@@ -23,7 +23,6 @@ body{
   opacity:0;
   animation:fadeIn 1.2s ease forwards;
 }
-
 @keyframes fadeIn{
   from{opacity:0}
   to{opacity:1}
@@ -124,7 +123,7 @@ footer{
 
 <body>
 
-<!-- PHOTO SPLASH (NO TEXT) -->
+<!-- SPLASH -->
 <div id="splash"></div>
 
 <header>
@@ -132,6 +131,7 @@ footer{
   <p>Official Personal & Professional Portal</p>
 </header>
 
+<!-- WELCOME -->
 <div class="section">
   <h2>Welcome</h2>
   <p>
@@ -148,6 +148,31 @@ footer{
   <div id="countdown">Loading countdown…</div>
 </div>
 
+<!-- PRERANA EXPERIENCE (NEW SECTION) -->
+<div class="section">
+  <h2>PRERANA Journey & Learnings</h2>
+  <p>
+    As a proud <strong>PRERANA Alumnus</strong>, my journey has been shaped by
+    real-life experiences, moral values, and purposeful learning.
+  </p>
+
+  <p>
+    The PRERANA program taught me discipline, ethical thinking, leadership,
+    and the importance of serving society with honesty and responsibility.
+  </p>
+
+  <p>
+    These learnings continue to guide my mindset, strengthen my character,
+    and define my long-term goals.
+  </p>
+
+  <a class="btn" target="_blank"
+     href="https://green-cartoon-b8e.notion.site/Prerana-Experience-302161bfa1c780b684d5c7ee30bde2bb">
+     Read My PRERANA Experience →
+  </a>
+</div>
+
+<!-- ZINDAGI KA REAL SYLLABUS -->
 <div class="section">
   <h2>Zindagi Ka Real Syllabus ✍️</h2>
   <p>
@@ -161,47 +186,7 @@ footer{
   </a>
 </div>
 
-<div class="section">
-  <h2>Important Document & Reflection 📄</h2>
-  <p>
-    This section contains an important document hosted on Google Drive,
-    representing a meaningful part of my journey.
-  </p>
-
-  <div class="callout">
-    🇮🇳 PM of India Narendra Modi’s words for me
-  </div>
-
-  <a class="btn" target="_blank"
-     href="https://drive.google.com/file/d/1LhSIXRoJHjyKzYl2O26VPIQoB_b29aIl/view?usp=drivesdk">
-     View Document →
-  </a>
-</div>
-
-<div class="section">
-  <h2>About Me</h2>
-  <p>
-    My name is Mankit, born and raised in Karnal. I completed my schooling from
-    PM Shri Government Senior Secondary School, Karnal. I am currently a
-    JEE aspirant who believes in discipline and honest effort.
-  </p>
-
-  <p>
-    I am a proud <strong>PRERANA Alumnus</strong>, supported by the
-    <strong>Ministry of Education, Government of India</strong>.
-  </p>
-
-  <p>
-    I am also a member of the <strong>Sakura Science Club, Japan</strong>,
-    gaining exposure to global scientific thinking.
-  </p>
-
-  <div class="callout">
-    Core qualities: consistency, discipline, integrity,
-    curiosity for learning, and respect for all.
-  </div>
-</div>
-
+<!-- FOOTER -->
 <footer>
   <div class="footer-box">
     <a class="contact-card" target="_blank"
@@ -223,7 +208,7 @@ footer{
 </footer>
 
 <script>
-/* SPLASH AUTO REMOVE AFTER 4 SEC */
+/* SPLASH AUTO REMOVE */
 setTimeout(function(){
   document.getElementById("splash").style.display="none";
 },4000);
