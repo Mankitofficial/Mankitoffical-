@@ -14,25 +14,21 @@ body{
   color:#1a1a1a;
 }
 
-/* INTRO */
-#intro{
+/* PHOTO SPLASH */
+#splash{
   position:fixed;
   inset:0;
-  background:radial-gradient(circle at top,#0b5cff,#08162e);
+  background:url('hero.jpg') no-repeat center center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
   z-index:9999;
 }
-#intro h1{
+#splash h1{
   font-size:4rem;
   letter-spacing:8px;
-  color:#fff;
-  animation:glow 1.5s infinite alternate;
-}
-@keyframes glow{
-  from{text-shadow:0 0 10px #fff}
-  to{text-shadow:0 0 40px #7ecbff}
+  color:gold;
+  text-shadow:0 6px 25px rgba(0,0,0,.7);
 }
 
 /* HEADER */
@@ -125,13 +121,17 @@ footer{
   opacity:.8;
   font-size:.85rem;
 }
+
+@media(max-width:768px){
+  #splash h1{font-size:2.6rem;}
+}
 </style>
 </head>
 
 <body>
 
-<!-- INTRO -->
-<div id="intro">
+<!-- PHOTO SPLASH -->
+<div id="splash">
   <h1>MANKIT</h1>
 </div>
 
@@ -236,10 +236,10 @@ footer{
 </footer>
 
 <script>
-/* INTRO */
-setTimeout(()=>{
-  document.getElementById("intro").style.display="none";
-},3000);
+/* SPLASH AUTO HIDE (4 sec) */
+setTimeout(function(){
+  document.getElementById("splash").style.display="none";
+},4000);
 
 /* COUNTDOWN */
 const target=new Date("March 3, 2026 00:00:00").getTime();
